@@ -1,0 +1,308 @@
+@-webkit-keyframes body {
+		from {
+				height: 190px;
+				top: 62px;
+		}
+		to {
+				height: 170px;
+				top: 82px;
+		}
+}
+
+@keyframes body {
+		from {
+				height: 190px;
+				top: 62px;
+		}
+		to {
+				height: 170px;
+				top: 82px;
+		}
+}
+
+@keyframes ears {
+		from {
+				top: 0px;
+		}
+		to {
+				top: 20px;
+		}
+}
+
+body {
+		height: 100vh;
+		margin: 0;
+		background: #9DBEBB;
+}
+
+.container {
+		height: 100%;
+}
+
+.image {
+		position: absolute;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 700px;
+		left: 50%;
+		height: 500px;
+}
+
+.water {
+		width: 500px;
+		overflow: hidden;
+		height: 420px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+}
+
+.water .pool {
+		position: absolute;
+		border-radius: 100%;
+}
+
+.water > .pool {
+		background-color: #8eb4b0;
+		height: 500px;
+		width: 500px;
+		transform: rotateZ(95deg) rotateY(49deg);
+}
+
+.water > .pool > .pool {
+		background-color: #7eaaa6;
+		height: 420px;
+		width: 420px;
+		top: 40px;
+		left: 40px;
+}
+
+.water > .pool > .pool > .pool {
+		background-color: #62938f;
+		height: 340px;
+		width: 340px;
+		top: 40px;
+		left: 40px;
+}
+
+.beaver {
+		position: absolute;
+		left: 92px;
+}
+
+.body {
+		height: 190px;
+		background-color: #916953;
+		position: absolute;
+		width: 180px;
+		border-top-left-radius: 100px;
+		border-top-right-radius: 100px;
+		top: 62px;
+		left: 163px;
+		animation-name: body;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+}
+
+.body-bottom {
+		height: 180px;
+		background-color: #916953;
+		position: absolute;
+		width: 180px;
+		border-radius: 100%;
+		top: 162px;
+		transform: rotateZ(95deg) rotateY(49deg);
+		left: 163px;
+}
+
+.ears {
+		position: absolute;
+		animation-name: ears;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+}
+
+.ear {
+		background-color: #916953;
+		height: 40px;
+		width: 40px;
+		position: absolute;
+		border-radius: 100px;
+}
+
+.ear .ear-inner {
+		background-color: #604637;
+		height: 20px;
+		width: 20px;
+		border-radius: 100px;
+		top: 10px;
+		position: absolute;
+		left: 7px;
+}
+
+.ear-left {
+		left: 175px;
+		top: 64px;
+}
+
+.ear-right {
+		left: 300px;
+		top: 70px;
+		z-index: 2;
+}
+
+.muzzle {
+		background: #b4907c;
+		height: 70px;
+		width: 70px;
+		border-radius: 100%;
+		position: absolute;
+		transform: rotateZ(95deg) rotateY(49deg);
+}
+
+.muzzle-left {
+		top: 84px;
+		left: -20px;
+		transform: rotateZ(95deg) rotateY(49deg) scale(0.95);
+}
+
+.muzzle-right {
+		top: 94px;
+		left: 40px;
+}
+
+.nose {
+		height: 30px;
+		width: 30px;
+		background: #292929;
+		border-radius: 100%;
+		transform: rotateZ(95deg) rotateY(49deg);
+		top: 91px;
+		position: absolute;
+		left: 30px;
+}
+
+.whisker {
+		height: 8px;
+		width: 10px;
+		background-color: #604637;
+		border-radius: 100%;
+		transform: rotateZ(95deg) rotateY(49deg);
+		position: absolute;
+}
+
+.whiskers-left {
+		transform: scale(0.95);
+		position: absolute;
+		top: 5px;
+}
+
+.whiskers-left :nth-of-type(1) {
+		top: 106px;
+}
+
+.whiskers-left :nth-of-type(2) {
+		top: 120px;
+		left: -7px;
+}
+
+.whiskers-left :nth-of-type(3) {
+		top: 118px;
+		left: 11px;
+}
+
+.whiskers-right :nth-of-type(1) {
+		top: 124px;
+		left: 60px;
+}
+
+.whiskers-right :nth-of-type(2) {
+		top: 117px;
+		left: 77px;
+}
+
+.whiskers-right :nth-of-type(3) {
+		top: 131px;
+		left: 78px;
+}
+
+.eye {
+		background-color: #292929;
+		height: 15px;
+		width: 15px;
+		position: absolute;
+		border-radius: 100%;
+}
+
+.eye-left {
+		top: 81px;
+		left: 10px;
+}
+
+.eye-right {
+		top: 91px;
+		left: 76px;
+}
+
+.bubbles .bubble {
+		height: 15px;
+		width: 15px;
+		border-radius: 100%;
+		background: #8eb4b0;
+		position: absolute;
+}
+
+.bubbles :nth-of-type(1) {
+		left: 155px;
+		top: 253px;
+}
+
+.bubbles :nth-of-type(2) {
+		background: #9DBEBB;
+		left: 164px;
+		top: 265px;
+		height: 10px;
+		width: 10px;
+}
+
+.bubbles :nth-of-type(3) {
+		left: 205px;
+		top: 296px;
+		height: 12px;
+		width: 12px;
+}
+
+.bubbles :nth-of-type(4) {
+		left: 214px;
+		top: 300px;
+		background: #9DBEBB;
+		z-index: 3;
+}
+
+.bubbles :nth-of-type(5) {
+		left: 226px;
+		top: 305px;
+		height: 8px;
+		width: 8px;
+		background: #acc8c6;
+}
+
+.bubbles :nth-of-type(6) {
+		left: 309px;
+		top: 287px;
+		background: #9DBEBB;
+		z-index: 3;
+}
+
+.bubbles :nth-of-type(7) {
+		left: 321px;
+		top: 286px;
+		height: 8px;
+		width: 8px;
+		background: #acc8c6;
+}
